@@ -15,5 +15,5 @@ public interface MainActivityBuilders {
     Activity provideActiity(MainActivity activity);
 
     @ContributesAndroidInjector
-    MainActivity homeActivity();
+    MainActivity mainActivity();
 }

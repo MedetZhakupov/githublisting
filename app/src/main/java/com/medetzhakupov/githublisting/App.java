@@ -1,5 +1,7 @@
 package com.medetzhakupov.githublisting;
 
+import com.medetzhakupov.githublisting.di.DaggerAppComponent;
+
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
 
