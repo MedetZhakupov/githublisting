@@ -7,6 +7,8 @@ import com.medetzhakupov.githublisting.R;
 
 public class DetailActivity extends AppCompatActivity {
 
+    public static final String USERNAME = "username";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

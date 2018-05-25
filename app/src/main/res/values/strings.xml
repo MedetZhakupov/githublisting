@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GithubListing</string>
+    <string name="api_error_users">Error loading users</string>
+    <string name="api_error_user_detail">Error loading user detail</string>
 </resources>

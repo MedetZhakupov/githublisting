@@ -11,4 +11,11 @@
         android:layout_height="match_parent"/>
 
     <include layout="@layout/loading_frame"/>
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </FrameLayout>

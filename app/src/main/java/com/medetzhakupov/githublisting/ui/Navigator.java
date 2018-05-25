@@ -2,6 +2,7 @@ package com.medetzhakupov.githublisting.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 
 import com.medetzhakupov.githublisting.ui.detail.DetailActivity;
 
@@ -20,8 +21,9 @@ public class Navigator {
     }
 
 
-    public void navigateToDetails() {
+    public void navigateToDetails(String username) {
         Intent intent = new Intent(activity, DetailActivity.class);
+        intent.putExtra(DetailActivity.USERNAME, username);
         activity.startActivity(intent);
     }
 }

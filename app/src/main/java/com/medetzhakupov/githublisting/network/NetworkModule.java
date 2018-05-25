@@ -7,6 +7,7 @@ import dagger.Module;
 import dagger.Provides;
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 
 /**
  * Created by Medet Zhakupov.
@@ -17,7 +18,13 @@ public abstract class NetworkModule {
     @Provides
     @Singleton
     static Call.Factory provideOkHttp() {
-        return new OkHttpClient.Builder().build();
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        return new OkHttpClient
+                .Builder()
+                .addInterceptor(interceptor)
+                .build();
     }
 
     @Provides

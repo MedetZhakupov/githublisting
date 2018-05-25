@@ -39,7 +39,8 @@ ext {
     butterknifeVersion = '8.8.1'
     mockitoVersion = '2.10.0'
     robolectricVersion = '3.8'
-    glideVersion = '4.2.0'
+    glideVersion = '4.7.1'
+    okhttpVersion = '3.9.1'
 }
 
 task clean(type: Delete) {
